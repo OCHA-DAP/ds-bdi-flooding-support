@@ -31,6 +31,8 @@ from ochanticipy import (
     ChirpsDaily,
     GeoBoundingBox,
 )
+
+from src import utils
 ```
 
 ```python
@@ -50,8 +52,8 @@ chirpsdaily = ChirpsDaily(
 ```
 
 ```python
-chirpsdaily.download()
-chirpsdaily.process()
+# chirpsdaily.download()
+# chirpsdaily.process()
 ```
 
 ```python
@@ -64,6 +66,15 @@ da_clip = da.rio.clip(adm0.geometry, all_touched=True)
 df = da_clip.to_dataframe()
 df = df.reset_index().drop(columns="spatial_ref")
 total_pixels = len(df.dropna().groupby(["X", "Y"]).size().reset_index())
+```
+
+```python
+# save as single file to not rely on AnticiPy loading ~15k processed files
+save_dir = utils.DATA_DIR / "public" / "processed" / "bdi" / "chirps"
+filename = "bdi_chirps_daily_1981_01_01_to_2023_09_30_r0.05_Nm2Sm4Ep31Wp29.nc"
+# remove missing_value as it conflicts with with _FillValue
+da.encoding.pop("missing_value")
+da.to_netcdf(save_dir / filename)
 ```
 
 ```python
