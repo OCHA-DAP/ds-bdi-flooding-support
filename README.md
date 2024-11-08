@@ -1,40 +1,6 @@
-# Burundi Anticipatory Action: flooding
+# Burundi flooding support
 
-[![Generic badge](https://img.shields.io/badge/STATUS-UNDER%20DEVELOPMENT-%23007CE0)](https://shields.io/)
-
-## Background information
-
-Provide a basic overview of the context of anticipatory action in this country.
-Link to the GDrive Trigger Card document for greater context and details.
-
-## Overview of analysis
-
-What is the basic process of the analysis contained within this repository?
-
-## Data description
-
-- Where does the data come from? Are there any licensing or usage restrictions?
-- How can the data be accessed?
-- Why were these datasets selected?
-- Are there any limitations with these datasets that one should be aware
-    of when running the analysis and interpreting results?
-
-## Directory structure
-
-The code in this repository is organized as follows:
-
-```shell
-
-├── analysis      # Main repository of analytical work for the AA pilot
-├── docs          # .Rmd files or other relevant documentation
-├── exploration   # Experimental work not intended to be replicated
-├── src           # Code to run any relevant data acquisition/processing pipelines
-|
-├── .gitignore
-├── README.md
-└── requirements.txt
-
-```
+Rainfall analysis for Burundi.
 
 ## Reproducing this analysis
 
