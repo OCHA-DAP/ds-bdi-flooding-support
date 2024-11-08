@@ -8,9 +8,9 @@ jupyter:
       format_version: '1.3'
       jupytext_version: 1.15.2
   kernelspec:
-    display_name: ds-aa-bdi-flooding
+    display_name: ds-bdi-flooding-support
     language: python
-    name: ds-aa-bdi-flooding
+    name: ds-bdi-flooding-support
 ---
 
 # Lake level
