@@ -1,6 +1,8 @@
 # Burundi flooding support
 
-Rainfall analysis for Burundi.
+_Archived 2024-12-12_
+
+One-off rainfall analysis for Burundi.
 
 ## Reproducing this analysis
 
